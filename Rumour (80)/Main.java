@@ -50,7 +50,7 @@ public class Main {
         }
     }
 
-    public static void setStandardInput() {
+    private static void setStandardInput() {
 
         String input = "4\n" +
                 "1 1\n" +
