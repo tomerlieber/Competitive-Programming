@@ -7,7 +7,7 @@ public class EllipseArt {
 
     public static void main(String[] args) {
 
-        // Uncomment the following line in order to stimulate a specific input
+        // Uncomment the following line in order to simulate a specific input
         // setStandardInput();
 
         Scanner in = new Scanner(System.in);
