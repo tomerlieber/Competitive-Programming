@@ -26,9 +26,9 @@ public class DogWalking {
 
             Arrays.sort(sizes);
 
-            long[] ranges = new long[N-1];
+            long[] ranges = new long[N - 1];
             for (int j = 0; j < ranges.length; j++) {
-                ranges[j] = sizes[j+1] - sizes[j];
+                ranges[j] = sizes[j + 1] - sizes[j];
             }
 
             Arrays.sort(ranges);
