@@ -59,7 +59,6 @@ public class CountingMolecules {
         }
     }
 
-
     private static void setStandardInput() {
 
         String input = "10 0 20";
