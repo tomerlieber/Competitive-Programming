@@ -18,13 +18,37 @@ public class RunningUpStairs {
 
             int n = in.nextInt(); // The number of steps
 
-            BigInteger count = calcWays(n);
+            BigInteger count = calcWaysRec(n);
 
             System.out.println(count);
         }
     }
 
-    private static BigInteger calcWays(int n) {
+    // The best approach to solve the question with loop for.
+    private static BigInteger calcWays(int n)
+    {
+        BigInteger prev = BigInteger. valueOf(1);
+        BigInteger curr = BigInteger.valueOf(1);
+        BigInteger next;
+
+        if (n == 1) {
+            return curr;
+        }
+
+        for (int i = 2; i <= n; i++)
+        {
+            next = prev.add(curr);
+            prev = curr;
+            curr = next;
+        }
+
+        return curr;
+    }
+
+    // Another approach to solve the question with recursion.
+    // Put attention how I stored the fibonacci numbers I calculated so far to prevent recalculation.
+    // This reduce the running time from exponential to linear.
+    private static BigInteger calcWaysRec(int n) {
 
         // Store the Fibonacci numbers we calculated to prevent recalculation.
         BigInteger[] fibNums = new BigInteger[n + 1];
@@ -50,7 +74,7 @@ public class RunningUpStairs {
         String input = "3\n" +
                 "1\n" +
                 "2\n" +
-                "5";
+                "22000";
 
         InputStream fakeIn = new ByteArrayInputStream(input.getBytes());
 
