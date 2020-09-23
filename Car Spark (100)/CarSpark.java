@@ -35,9 +35,13 @@ public class CarSpark {
 
             int maxHour = 48;
 
+            // Let revenue[i] denotes the maximum revenue John can generate by hour i.
             int[] revenue = new int[maxHour + 1];
 
+            // Base case
             revenue[0] = 0;
+
+            // Recursion case
             int i = 0;
             for (int hour = 1; hour <= maxHour; hour++) {
 
