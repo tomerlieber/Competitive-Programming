@@ -10,3 +10,5 @@ Binary Quilts
 
 // Xtreme9.0 - Alice and Bob Play Sheldon's Favorite Game
 (A simple graph that the out-degree of all the nodes is bigger than one must contain a cycle).
+
+// Xtreme 10.0 - Collecting Gold (Dijkstra)
