@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class ARMConstantMultiplication {
 
     public static void main(String[] args) {
+
         // Uncomment the following line in order to simulate a specific input
-        setStandardInput();
+        // setStandardInput();
 
         Scanner in = new Scanner(System.in);
 
