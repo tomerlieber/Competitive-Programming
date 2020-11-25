@@ -92,7 +92,7 @@ public class PlayWithGCD {
         x+=y;
         if(x>=mod)x-=mod;
         return x;
-//        return (x % mod + y % mod) % mod;
+//        return (val % mod + y % mod) % mod;
     }
 
     private static void setStandardInput() {

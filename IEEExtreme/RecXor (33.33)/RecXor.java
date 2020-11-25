@@ -15,7 +15,7 @@ public class RecXor {
 
         for (int testNum = 0; testNum < t; testNum++) {
 
-            // Rectangle dimensions l x h.
+            // Rectangle dimensions l val h.
             long l = in.nextInt();
             long h = in.nextInt();
             long n = in.nextInt(); // A number
